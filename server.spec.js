@@ -31,7 +31,7 @@ describe("Routing Handlers", () => {
 
   describe("POST /games", () => {
     afterEach(async () => {
-      await db("games_test").truncate();
+      await db("games").truncate();
     });
 
     it("responds with status 201", async () => {

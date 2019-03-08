@@ -4,7 +4,7 @@ const db = require("./dbConfig.js");
 
 describe("Games tests", () => {
   afterEach(async () => {
-    await db("games_test").truncate();
+    await db("games").truncate();
   });
 
   it("game gets added", async () => {
